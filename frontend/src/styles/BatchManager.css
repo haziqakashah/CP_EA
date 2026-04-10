@@ -1,0 +1,49 @@
+.batch-manager {
+  display: grid;
+  gap: 16px;
+}
+
+.batch-list {
+  display: grid;
+  gap: 12px;
+}
+
+.batch-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+}
+
+.batch-card h4,
+.batch-card p,
+.batch-card small {
+  display: block;
+  margin: 0;
+}
+
+.batch-card p {
+  margin-top: 6px;
+  color: #0f172a;
+}
+
+.batch-card small {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.batch-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .batch-card {
+    flex-direction: column;
+  }
+}

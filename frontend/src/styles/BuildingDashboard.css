@@ -1,0 +1,131 @@
+.building-dashboard {
+  display: grid;
+  gap: 18px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.dashboard-header h3,
+.dashboard-header p {
+  margin: 0;
+}
+
+.dashboard-header p {
+  margin-top: 6px;
+  color: #64748b;
+}
+
+.dashboard-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.dashboard-kpi,
+.dashboard-profile-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #f8fafc;
+  padding: 16px;
+}
+
+.dashboard-kpi .label,
+.dashboard-kpi .value {
+  display: block;
+}
+
+.dashboard-kpi .label {
+  color: #64748b;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+.dashboard-kpi .value {
+  margin-top: 8px;
+  color: #0f172a;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.dashboard-profiles {
+  display: grid;
+  gap: 14px;
+}
+
+.dashboard-profile-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.dashboard-profile-top h4,
+.dashboard-profile-top p {
+  margin: 0;
+}
+
+.dashboard-profile-top p,
+.dashboard-profile-meta {
+  color: #64748b;
+}
+
+.dashboard-profile-meta {
+  margin: 12px 0;
+}
+
+.dashboard-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.dashboard-chip {
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #ecfeff;
+  color: #0f766e;
+  font-size: 0.82rem;
+}
+
+.dashboard-chip.muted {
+  background: #e2e8f0;
+  color: #475569;
+}
+
+.dashboard-summary-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.dashboard-summary-item {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: white;
+}
+
+.dashboard-summary-item.ok {
+  border-left: 4px solid #16a34a;
+}
+
+.dashboard-summary-item.warning {
+  border-left: 4px solid #dc2626;
+}
+
+.dashboard-summary-item.no_threshold {
+  border-left: 4px solid #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .dashboard-header,
+  .dashboard-profile-top {
+    flex-direction: column;
+  }
+}

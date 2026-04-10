@@ -1,0 +1,83 @@
+.equipment-manager {
+  display: grid;
+  gap: 16px;
+}
+
+.section-heading p {
+  margin: 6px 0 0;
+  color: #64748b;
+}
+
+.equipment-form {
+  display: grid;
+  gap: 12px;
+}
+
+.equipment-form input,
+.equipment-form select,
+.equipment-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8dee7;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.template-preview {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #bae6fd;
+  background: #ecfeff;
+}
+
+.template-preview strong,
+.template-preview p {
+  display: block;
+  margin: 0;
+}
+
+.template-preview p {
+  margin-top: 6px;
+  color: #0f172a;
+}
+
+.equipment-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.equipment-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.equipment-card h4 {
+  margin: 0 0 4px;
+}
+
+.equipment-type {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-weight: 700;
+}
+
+.equipment-notes {
+  color: #64748b;
+}
+
+.equipment-template {
+  color: #0369a1;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .equipment-card {
+    flex-direction: column;
+  }
+}

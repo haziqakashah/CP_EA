@@ -1,0 +1,281 @@
+.data-upload {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.data-upload h3 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.upload-description {
+  margin-top: -8px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.upload-area {
+  border: 2px dashed #0f766e;
+  border-radius: 10px;
+  padding: 36px 20px;
+  text-align: center;
+  background-color: #f8fafc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload-area:hover,
+.upload-area.active {
+  background-color: #ecfeff;
+  border-color: #0f766e;
+}
+
+.upload-area input[type="file"] {
+  display: none;
+}
+
+.upload-area label {
+  cursor: pointer;
+  display: block;
+}
+
+.upload-icon {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.upload-area p {
+  margin: 5px 0;
+}
+
+.upload-hint {
+  font-size: 0.92rem;
+  color: #64748b;
+}
+
+.equipment-upload-placeholder,
+.equipment-upload-context {
+  margin: 16px 0 0;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #d8dee7;
+  background: #f8fafc;
+}
+
+.equipment-upload-placeholder h4,
+.equipment-upload-context strong,
+.equipment-upload-context small,
+.equipment-upload-context .context-label {
+  display: block;
+}
+
+.equipment-upload-placeholder h4 {
+  margin: 0 0 8px;
+}
+
+.equipment-upload-placeholder p {
+  margin: 0;
+  color: #64748b;
+}
+
+.equipment-upload-context {
+  background: #ecfeff;
+  border-color: #99f6e4;
+}
+
+.equipment-upload-context .context-label {
+  color: #0f766e;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.equipment-upload-context strong {
+  margin-top: 6px;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.equipment-upload-context small {
+  margin-top: 4px;
+  color: #64748b;
+  text-transform: uppercase;
+}
+
+.mapping-workspace {
+  margin-top: 24px;
+  display: grid;
+  gap: 18px;
+}
+
+.cleanup-panel {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #d8dee7;
+  background: #f8fafc;
+}
+
+.cleanup-panel h4 {
+  margin: 0 0 8px;
+}
+
+.cleanup-panel p {
+  margin: 0 0 12px;
+  color: #64748b;
+}
+
+.cleanup-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 10px 16px;
+}
+
+.mapping-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #d8dee7;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.mapping-header h4,
+.mapping-header p {
+  margin: 0;
+}
+
+.import-batch-field {
+  padding: 16px;
+  border: 1px solid #d8dee7;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.import-batch-field span {
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.sheet-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.sheet-chip {
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #334155;
+  padding: 10px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  font: inherit;
+}
+
+.sheet-chip.active {
+  background: #0f766e;
+  color: white;
+  border-color: #0f766e;
+}
+
+.sheet-panel {
+  display: grid;
+  gap: 18px;
+}
+
+.sheet-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: end;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.field-stack {
+  display: grid;
+  gap: 6px;
+  min-width: 220px;
+}
+
+.field-stack input,
+.field-stack select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.preview-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.preview-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+.preview-table th,
+.preview-table td {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.preview-table th {
+  background: #f8fafc;
+}
+
+.column-mapper {
+  display: grid;
+  gap: 14px;
+}
+
+.column-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 16px;
+  background: #fff;
+}
+
+.column-meta p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.column-fields {
+  margin-top: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 768px) {
+  .mapping-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .preview-table {
+    min-width: 520px;
+  }
+}

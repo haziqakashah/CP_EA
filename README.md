@@ -40,6 +40,15 @@ Energy auditing/
 
 ## Quick Start
 
+### Fastest Way For Windows
+
+1. Clone the repo
+2. Double-click `setup_windows.bat`
+3. After setup finishes, double-click `start_app.bat`
+4. Open `http://localhost:3000`
+
+That is the easiest path for teammates on Windows.
+
 ### Recommended Versions
 - Python `3.10.x`
 - Node.js `16+`
@@ -83,6 +92,15 @@ npm install
 npm run dev
 ```
 The app will be available at `http://localhost:3000`
+
+### Simple Windows Scripts
+
+From the repo root you can use:
+
+- `setup_windows.bat` - creates backend virtualenv and installs backend/frontend dependencies
+- `start_backend.bat` - starts Flask on `http://localhost:5001`
+- `start_frontend.bat` - starts Vite on `http://localhost:3000`
+- `start_app.bat` - opens backend and frontend in separate windows
 
 ## Features
 
@@ -186,21 +204,9 @@ For a teammate on Windows:
 
 ```powershell
 git clone <your-github-repo-url>
-cd "Energy auditing\\backend"
-py -3.10 -m venv venv
-.\\venv\\Scripts\\Activate.ps1
-python -m pip install --upgrade pip
-python -m pip install -r requirements.txt
-$env:PORT=5001
-python run.py
-```
-
-In a second terminal:
-
-```powershell
-cd "Energy auditing\\frontend"
-npm install
-npm run dev
+cd "Energy auditing"
+.\setup_windows.bat
+.\start_app.bat
 ```
 
 Then open `http://localhost:3000`.

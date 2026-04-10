@@ -1,5 +1,15 @@
 # Quick Start Guide
 
+## Fastest Windows Setup
+
+If you are on Windows, use the repo root scripts:
+
+1. Double-click `setup_windows.bat`
+2. Double-click `start_app.bat`
+3. Open `http://localhost:3000`
+
+If PowerShell asks for permission, allow it for this run.
+
 ## Setup Instructions
 
 ### 1. Backend Setup (Python)
@@ -28,7 +38,7 @@ WARNING in app.run_simple (werkzeug __init__.py:xxx)
  * Running on http://127.0.0.1:5000
 ```
 
-The backend API will be running at `http://localhost:5000`
+The backend API will be running at `http://localhost:5001`
 
 ---
 
@@ -131,7 +141,7 @@ npm install
 ### Connection Issues
 
 **CORS errors in browser console:**
-- Ensure backend is running on `http://localhost:5000`
+- Ensure backend is running on `http://localhost:5001`
 - Check frontend vite.config.js proxy settings
 
 **File upload errors:**
